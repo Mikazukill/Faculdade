@@ -11,7 +11,7 @@ int main () {
     const int n = 10;
     int end = n - 1;
     int vet[n] = {5, 2, 9, 1, 5, 6, 7, 3, 4, 8};
-    int busca = 1;
+    int busca = 10;
 
     int resultadoSequencial = sequencial (vet, n, busca);
 
