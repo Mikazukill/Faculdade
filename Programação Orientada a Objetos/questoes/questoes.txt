@@ -1,0 +1,180 @@
+0
+Em C, uma string é um vetor de caracteres terminado por '\0'.
+1
+0
+O caractere '\0' indica o início de uma string em C.
+0
+0
+Strings em C são armazenadas em posições de memória sequenciais.
+1
+0
+O especificador %s é usado para imprimir strings com printf.
+1
+0
+O compilador adiciona automaticamente '\0' ao final de literais string.
+1
+0
+Arrays podem armazenar dados de tipos diferentes.
+0
+0
+Structs permitem agrupar dados de diferentes tipos.
+1
+0
+Os campos de uma struct são acessados com o operador '.'.
+1
+0
+Uma struct deve ser definida antes de ser usada.
+1
+0
+typedef permite usar o nome da struct diretamente como tipo.
+1
+0
+Unions armazenam simultaneamente todos os seus campos.
+0
+0
+Enums são usados para definir constantes nomeadas.
+1
+0
+strlen retorna o tamanho de uma string.
+1
+0
+strcpy copia uma string incluindo o '\0'.
+1
+0
+strcat concatena duas strings.
+1
+0
+strcmp compara duas strings.
+1
+0
+strchr encontra a primeira ocorrência de um caractere.
+1
+0
+strstr encontra uma substring dentro de outra string.
+1
+0
+Enums começam sempre com valor 1 por padrão.
+0
+0
+Structs são homogêneas.
+0
+1
+O tamanho de uma string em C inclui o caractere '\0'.
+0
+1
+strncpy evita estouro de buffer ao limitar a cópia.
+1
+1
+strncat limita a quantidade de caracteres concatenados.
+1
+1
+strcmp retorna apenas 1 ou 0.
+0
+1
+strchr retorna NULL se o caractere não for encontrado.
+1
+1
+strtok divide uma string em tokens com base em delimitadores.
+1
+1
+memcpy copia bytes entre áreas de memória.
+1
+1
+memset preenche memória com um valor específico.
+1
+1
+Structs podem ser atribuídas diretamente em C ANSI.
+1
+1
+Ao atribuir uma struct a outra, apenas o primeiro campo é copiado.
+0
+1
+Structs podem ser passadas por valor ou por referência.
+1
+1
+Passagem por referência usa ponteiros.
+1
+1
+O operador '->' acessa campos via ponteiro para struct.
+1
+1
+Em unions, o tamanho é a soma de todos os campos.
+0
+1
+Em unions, apenas um campo é válido por vez.
+1
+1
+Escrever em um campo de union sobrescreve os outros.
+1
+1
+Enums podem ter valores explicitamente definidos.
+1
+1
+Enums sempre precisam de typedef para serem usados.
+0
+1
+Arrays são estruturas heterogêneas.
+0
+1
+Uma struct pode conter arrays como campos.
+1
+2
+strlen conta o '\0' no tamanho retornado.
+0
+2
+strncpy sempre adiciona '\0' ao final da string destino.
+0
+2
+strcmp retorna 0 quando as strings são iguais.
+1
+2
+strncmp compara strings completas sempre.
+0
+2
+strtok modifica a string original.
+1
+2
+memcpy é segura para regiões de memória sobrepostas.
+0
+2
+memset pode ser usada para inicializar strings com '\0'.
+1
+2
+Ao passar struct por valor, há cópia completa dos dados.
+1
+2
+Passar struct por referência é mais eficiente em termos de memória.
+1
+2
+(*ptr).campo e ptr->campo são equivalentes.
+1
+2
+Em unions, todos os campos ocupam espaços distintos na memória.
+0
+2
+O tamanho de uma union é determinado pelo maior campo.
+1
+2
+Ler um campo diferente do último escrito em uma union é comportamento seguro.
+0
+2
+Enums são armazenados internamente como inteiros.
+1
+2
+Valores de enums sempre começam em 0, mesmo com atribuição explícita.
+0
+2
+É possível iterar sobre enums usando incremento.
+1
+2
+Uma string literal pode ser modificada diretamente.
+0
+2
+Arrays de char inicializados com string literal incluem automaticamente '\0'.
+1
+2
+strcat não verifica limites do buffer destino.
+1
+2
+strcpy é sempre segura independentemente do tamanho do destino.
+0

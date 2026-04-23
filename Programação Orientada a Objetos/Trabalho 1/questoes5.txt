@@ -1,0 +1,21 @@
+5
+Enunciado Q2-1
+0
+Correto! Justificativa Q2-1-C.
+Errado! Justificativa Q2-1-E.
+Enunciado Q2-2
+1
+Correto! Justificativa Q2-2-C.
+Errado! Justificativa Q2-2-E.
+Enunciado Q2-3
+0
+Correto! Justificativa Q2-3-C.
+Errado! Justificativa Q2-3-E.
+Enunciado Q2-4
+1
+Correto! Justificativa Q2-4-C.
+Errado! Justificativa Q2-4-E.
+Enunciado Q2-5
+0
+Correto! Justificativa Q2-5-C.
+Errado! Justificativa Q2-5-E.

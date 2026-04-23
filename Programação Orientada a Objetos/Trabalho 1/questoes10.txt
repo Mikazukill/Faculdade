@@ -1,0 +1,41 @@
+10
+Afirmação 1
+0
+Correto! Justificativa 1C.
+Errado! Justificativa 1E.
+Afirmação 2
+1
+Correto! Justificativa 2C.
+Errado! Justificativa 2E.
+Afirmação 3
+0
+Correto! Justificativa 3C.
+Errado! Justificativa 3E.
+Afirmação 4
+1
+Correto! Justificativa 4C.
+Errado! Justificativa 4E.
+Afirmação 5
+0
+Correto! Justificativa 5C.
+Errado! Justificativa 5E.
+Afirmação 6
+1
+Correto! Justificativa 6C.
+Errado! Justificativa 6E.
+Afirmação 7
+0
+Correto! Justificativa 7C.
+Errado! Justificativa 7E.
+Afirmação 8
+1
+Correto! Justificativa 8C.
+Errado! Justificativa 8E.
+Afirmação 9
+0
+Correto! Justificativa 9C.
+Errado! Justificativa 9E.
+Afirmação 10
+1
+Correto! Justificativa 10C.
+Errado! Justificativa 10E.
