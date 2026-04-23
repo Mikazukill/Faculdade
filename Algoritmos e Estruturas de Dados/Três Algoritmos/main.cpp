@@ -24,7 +24,9 @@ int main () {
           cout << "encontrado de forma sequencial na posição: " << resultadoSequencial << endl;
 
     }
-  
+    
+    bubbleSort(vet,n)
+    
     int resultadoBinario = binario (vet, n, busca,start,end);
 
     if (resultadoBinario == -1) {
