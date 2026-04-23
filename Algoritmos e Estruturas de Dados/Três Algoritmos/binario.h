@@ -1,4 +1,5 @@
 int binario (int vet[], int n, int element, int start, int end){
+    
     if (start > end) {
         return -1;
     }
