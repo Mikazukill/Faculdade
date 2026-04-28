@@ -1,3 +1,4 @@
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -21,7 +22,11 @@ class StringList {
             string str();
 }
 
-StringList::~StringList() {
+StringList::StringList() {
+    head = tail = nullptr;
+}
+
+StringList::~StringList() { 
     while (head != nullptr) {
         Node *aux = head;
         head = head -> next;
@@ -38,4 +43,14 @@ void StringList::add(string S) {
         aux -> prev = tail;
         tail = aux;
     }
+}
+
+string StringList::str() {
+    stringstream ss;
+    Node *aux = head;
+    while (aux != nullptr) {
+        ss << aux -> data << endl;
+        aux = aux -> next;
+    }
+    return ss.str();
 }
