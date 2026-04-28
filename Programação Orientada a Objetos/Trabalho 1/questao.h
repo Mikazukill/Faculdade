@@ -1,5 +1,4 @@
 #include <string>
-#include <iostream>
 
 using namespace std;
 
@@ -8,15 +7,16 @@ class questao {
 
         string pergunta;
         bool res;
-        string just;
+        string just0;
+        string just1;
 
     public:
 
-    questao(string per, bool res, string just) {
+        questao(string pergunta = "", bool resposta = false, string justificativa0 = "", string justificativa1 = "") {
 
-        string pergunta = pergunta;
-        bool resposta = resposta;
-        string justificativa = just;       
+            this -> pergunta = pergunta;
+            res = resposta;
+            just0 = justificativa0;
+            just1 = justificativa1;
     }
-
-}
+};  
