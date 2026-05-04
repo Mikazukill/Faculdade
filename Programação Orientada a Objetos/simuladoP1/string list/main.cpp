@@ -1,5 +1,4 @@
 #include <iostream>
-#include <sstream>
 #include "stringList.h"
 
 using namespace std;

@@ -1,5 +1,5 @@
-#include <iostream>
 #include <string>
+#include <sstream>
 
 using namespace std;
 
@@ -11,17 +11,16 @@ class StringList {
             Node *prev, *next;
             Node (string d) {
                 data = d;
-                prev = next = nullprt;
+                prev = next = nullptr;
             }
     };
-                Node *head, *tail;
+            Node *head, *tail;
         public:
             StringList();
             ~StringList();
             void add(string s);
             string str();
-}
-
+};
 StringList::StringList() {
     head = tail = nullptr;
 }
@@ -35,7 +34,7 @@ StringList::~StringList() {
 }
 
 void StringList::add(string S) {
-    Node *aux = new Node(s);
+    Node *aux = new Node(S);
     if(head == nullptr) {
         head = tail = aux;
     } else {

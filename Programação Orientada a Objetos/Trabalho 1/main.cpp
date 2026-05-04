@@ -13,7 +13,11 @@ int main () {
             cout << "Não foi possivel abrir o arquivo" << endl;
             return 1;
         }
-
+        while(getline(arq,string) != false) {
+            string numquestoes;
+            getline(arq, numquestoes);
+            
+        }
         
     return 0;
 }
