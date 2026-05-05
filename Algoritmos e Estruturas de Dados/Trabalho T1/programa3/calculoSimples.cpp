@@ -2,23 +2,19 @@
 
 using namespace std;
 
-class produto {
-    private:
-        int id;
-        double preco;
-        int quantia;
-    public:
-        produto(int id, double preco, int quantia) {
-            this -> id = id;
-            this -> preco = preco;
-            this -> quantia = quantia;
-        }
-
-
-};
-
 int main () {
 
+    int id;
+    double preco;
+    int quantia;
 
+    cin >> id;
+    cin >> preco;
+    cin >> quantia;
+
+    double valor = quantia * preco;
+
+    cout << "" << valor << endl;
+    
     return 0;
 }
