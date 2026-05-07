@@ -1,7 +1,3 @@
-/*
-    testbench par o modulo que realizar soma/subtração em função de mode
-    Fernando Moraes - 13/abril/2025
-*/
 module tb;
 
   parameter N = 4;

@@ -18,11 +18,9 @@ ListDoubleLinked::ListDoubleLinked()
 */
 void ListDoubleLinked::clear()
 {
-    /*
-    head = NULL;
-    tail = NULL;
+    header = NULL;
+    trailer = NULL;
     count = 0;
-    */
 }
 
 /**
@@ -52,15 +50,13 @@ int ListDoubleLinked::size()
 */
 void ListDoubleLinked::add(int element)
 {
-    /*
     Node *n = new Node(element);
     if (count != 0) // lista já tem elems?
-        tail->next = n;
+        trailer->next = n;
     else
-        head = n; // não, este é o primeiro
-    tail = n;
+        header = n; // não, este é o primeiro
+    trailer = n;
     count++;
-    */
 }
 
 /**
@@ -76,17 +72,16 @@ void ListDoubleLinked::add(int index, int element)
     {
         throw "Índice inválido";
     }
-    /*
     Node *n = new Node(element);
     if (index == 0)
     { // inserção no início?
-        n->next = head;
-        head = n;
+        n->next = header;
+        header = n;
     }
     else
     {
         Node *ant = NULL;
-        Node *target = head;
+        Node *target = header;
         for (int pos = 0; pos < index; pos++)
         {
             ant = target;
@@ -96,7 +91,6 @@ void ListDoubleLinked::add(int index, int element)
         n->next = target;
     }
     count++;
-    */
 }
 
 /**
@@ -112,12 +106,10 @@ int ListDoubleLinked::get(int index)
     {
         throw "Índice inválido";
     }
-    /*
-    Node *ptr = head;
+    Node *ptr = header;
     for (int pos = 0; pos < index; pos++)
         ptr = ptr->next;
-    return ptr->element;
-    */
+    return ptr->item;
 }
 
 /**
@@ -134,14 +126,12 @@ int ListDoubleLinked::set(int index, int element)
     {
         throw "Índice inválido!";
     }
-    /*
-    Node *ptr = head;
+    Node *ptr = header;
     for (int pos = 0; pos < index; pos++)
         ptr = ptr->next;
-    int temp = ptr->element; // salva o valor armazenado lá...
-    ptr->element = element;
+    int temp = ptr->item; // salva o valor armazenado lá...
+    ptr->item = element;
     return temp; // ...e retorna ele
-    */
 }
 
 /**
@@ -163,6 +153,7 @@ bool ListDoubleLinked::contains(int element)
  */
 bool ListDoubleLinked::remove(int element)
 {
+    return false;
 }
 
 /**
@@ -177,17 +168,16 @@ int ListDoubleLinked::removeByIndex(int index)
     {
         throw "Índice inválido!";
     }
-    /*
     // Se for o início, basta avançar o head
-    Node *aux = head;
+    Node *aux = header;
     if (index == 0)
     {
-        head = head->next;
+        header = header->next;
     }
     else
     {
-        Node *prev = head;
-        aux = head->next;
+        Node *prev = header;
+        aux = header->next;
         for (int pos = 1; pos < index; pos++)
         {
             prev = aux;
@@ -198,17 +188,16 @@ int ListDoubleLinked::removeByIndex(int index)
         // Se for o final da lista,
         // ajusta o tail
         if (index == count - 1)
-            tail = prev;
+            trailer = prev;
     }
     count--;
     // Se a lista ficar vazia (count==0),
     // garante que o tail também será NULL
     if (count == 0)
-        tail = NULL;
-    int valor = aux->element;
+        trailer = NULL;
+    int valor = aux->item;
     delete aux; // libera a memória ocupada pelo nodo
     return valor;
-    */
 }
 
 /**
@@ -219,16 +208,14 @@ int ListDoubleLinked::removeByIndex(int index)
  */
 int ListDoubleLinked::indexOf(int element)
 {
-    /*
-    Node *ptr = head;
+    Node *ptr = header;
     for (int pos = 0; pos < count; pos++)
     {
-        if (ptr->element == element)
+        if (ptr->item == element)
             return pos;
         ptr = ptr->next;
     }
-    return -1; // não encontrou
-    */
+    return -1;
 }
 
 /**
@@ -238,16 +225,14 @@ int ListDoubleLinked::indexOf(int element)
 */
 string ListDoubleLinked::toString()
 {
-    /*
     ostringstream aux;
     aux << "[ ";
-    Node *ptr = head;
+    Node *ptr = header;
     while (ptr)
     {
-        aux << ptr->element << " ";
+        aux << ptr->item << " ";
         ptr = ptr->next;
     }
     aux << "]";
     return aux.str();
-    */
 }
