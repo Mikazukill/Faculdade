@@ -1,0 +1,5 @@
+O(1)
+
+independente do valor que o usuario insira o valor maximo de operações do programa é 8.
+
+escolhi começar do centro do intervalo e usei if e else para identificar em qual intervalo o número se encaixava. 

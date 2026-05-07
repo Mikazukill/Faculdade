@@ -1,0 +1,3 @@
+O(1)
+
+independente do valor que o usuario insira o valor maximo de operações do programa é 13.
