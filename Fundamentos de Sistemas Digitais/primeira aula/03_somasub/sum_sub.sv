@@ -1,3 +1,7 @@
+/*
+    Modulo que realizar soma/subtração em função de mode
+    Fernando Moraes - 13/abril/2025
+*/
 module sum_sub #(parameter N = 4)
     (   input logic [N-1:0] A, B,
         input logic mode,
