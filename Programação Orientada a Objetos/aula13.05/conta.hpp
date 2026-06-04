@@ -1,3 +1,5 @@
+#ifndef CONTA_HPP
+
 class Conta {
     private:
         int numero;
@@ -6,8 +8,8 @@ class Conta {
         Conta(int n = 0, double s = 0.0);
         int obtemNumero();
         double obtemSaldo();
-        void depositar(int valor);
-        void sacar(int valor);
+        void depositar(double valor);
+        void sacar(double valor);
         void sacar();
 };
 
@@ -21,12 +23,16 @@ int Conta::obtemNumero() {
 double Conta::obtemSaldo() {
     return saldo;
 }
-void Conta::depositar(int valor){
+void Conta::depositar(double valor){
     saldo = saldo + valor;
 }
-void Conta::sacar(int valor) {
-    saldo = saldo - valor;
+void Conta::sacar(double valor) {
+    if(saldo >= valor) {
+        saldo = saldo - valor;
+    }
 }
 void Conta::sacar(){
     saldo = 0;
 }
+
+#endif

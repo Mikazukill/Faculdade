@@ -1,0 +1,2 @@
+TAD o que se espera que um algoritmo faça
+ESTRUTURA DE DADOS como é implementado em código
